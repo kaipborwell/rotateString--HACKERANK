@@ -1,0 +1,9 @@
+public static void rotateString(String s) {
+        // iterate the operation n times starting at index 1 and ending at index n (we want to return original s)
+        for (int i = 1; i <= s.length(); i++) {
+            // take the front substring up to i and add it to the original string without the front substring
+            String ans = s.substring(i) + s.substring(0, i);
+            // print the result with a space for formatting
+            System.out.print(ans + " ");
+        }
+    }
